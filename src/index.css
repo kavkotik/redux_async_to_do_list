@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+input,
+label {
+  display: block;
+  border: none;
+}
+
+input[type="text"],
+button {
+  padding: 10px;
+}
+
+label,
+button {
+  border: 2px solid silver;
+}
+
+button {
+  background: rgb(0, 117, 128);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.addTodo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.addTodo__input,
+.addTodo__label {
+  width: 100%;
+}
+
+.todoList {}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #efefef;
+}
+
+.todoItem:nth-child(odd) {
+  background: #efefef;
+}
+
+.todoItem * {
+  margin-right: 10px;
+}
+
+.todoItem *:first-child {
+  font-size: .7rem;
+  font-weight: bold;
+}
+
+.todoItem *:last-child {
+  margin-right: 0;
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.todoItem__completed:checked + p {
+  text-decoration: line-through;
+  color: grey;
+  font-style: italic;
+}
